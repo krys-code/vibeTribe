@@ -1,0 +1,176 @@
+.big-text {
+  font-size: 120px !important;
+  letter-spacing: 5px;
+}
+
+section.cta {
+  position: relative;
+  padding: 250px 0;
+  background-image: url('../img/music_board.jpeg');
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+
+.overlay {
+  position: relative;
+  padding: 250px 0;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 235, .8));
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+  z-index: 1;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.cta .cta-content .btn:hover {
+  color: #000;
+}
+
+.header-content .btn:hover {
+  color: #000;
+}
+
+.headphones1 {
+  font-size: 100px !important;
+  padding-right: 20px;
+  animation: music-beats1 4s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+/*
+.
+.
+the next 3 animations will change the color of each headphone icon.
+I chose a long duration so that the animation wouldn't be so in your
+face, but you can still tell that it's changing.
+.
+.
+*/
+
+@keyframes music-beats1 {
+  from {
+    color: rgb(200, 0, 100);
+  }
+  to {
+    color: rgb(0, 0, 200);
+  }
+}
+
+.headphones2 {
+  font-size: 100px !important;
+  padding-right: 20px;
+  animation: music-beats2 4s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes music-beats2 {
+  from {
+    color: rgb(0, 0, 200);
+  }
+  to {
+    color: rgb(100, 200, 0);
+  }
+}
+
+.headphones3 {
+  font-size: 100px !important;
+  padding-right: 20px;
+  animation: music-beats3 4s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes music-beats3 {
+  from {
+    color: rgb(200, 0, 100);
+  }
+  to {
+    color: rgb(0, 0, 200);
+  }
+}
+
+.footer-animation {
+  min-height: 150px;
+  background-image: url('../img/soundwave_red.gif');
+  animation: pulse .8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  margin: auto;
+}
+
+/*
+.
+.
+ creates the pulsing affect to the sound wave near the footer
+ .
+ .
+*/
+
+@keyframes pulse {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
+#mainNav .navbar-nav li a:hover {
+  border-bottom: 5px #000 solid;
+  padding-right: 8px;
+	padding-left: 8px;
+  animation: cool-nav .8s;
+}
+
+/*
+.
+.
+ gives a smooth underlining effect to the nav links when you hover over them
+ .
+ .
+*/
+
+@keyframes cool-nav {
+  from {
+    width: 0%;
+    border-color: #eee;
+  }
+  to {
+    width: 100%;
+    border-color: #000;
+  }
+}
+
+.btn:hover {
+  color: #000;
+  transform: rotate(0deg);
+  animation: twitch .1s;
+  animation-direction: normal;
+  animation-iteration-count: 3;
+}
+
+/*
+.
+.
+creates a twitching effect when you hover over the buttons
+.
+.
+*/
+
+@keyframes twitch {
+  from {
+    transform: rotate(-1deg)
+  }
+  to {
+    transform: rotate(1deg)
+  }
+}
